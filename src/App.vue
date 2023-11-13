@@ -1,5 +1,5 @@
 <template>
-  <UserCard msg="User Card" usuario="Juan" correo="juanmazon@correo.com" biografia="They'll tell you now you're the lucky one"/>
+  <UserCard msg="User Card" :usuario="usuario" :correo="correo" :biografia="biografia"/>
 </template>
 
 <script>
@@ -12,7 +12,9 @@ export default {
   },
   data(){
     return{
-      usuario: ['usuario']
+      usuario:"Juan",
+      correo:"juanmazon@correo.com",
+      biografia:"They'll tell you now you're the lucky one"
     }
   }
 }
