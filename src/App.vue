@@ -1,15 +1,19 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <UserCard msg="User Card" usuario="Juan" correo="juanmazon@correo.com" biografia="They'll tell you now you're the lucky one"/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import UserCard from './components/UserCard.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    UserCard
+  },
+  data(){
+    return{
+      usuario: ['usuario']
+    }
   }
 }
 </script>
